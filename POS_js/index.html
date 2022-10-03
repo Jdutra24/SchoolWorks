@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img id="logo" src="img/logo.svg" alt="Logo">
+        </div>
+        
+    </nav>
+
+    <div class="container">
+        <div class="grid">
+            <div class="grid-item topo">
+                Categorias
+            </div>
+            
+            <div class="grid-item topo"></div>
+            <div class="grid-item topo"></div>
+
+            <div class="grid-item topo">
+                Lista de produtos
+            </div>
+            
+            <div class="grid-item lista">
+                <p class="produtos">Nenhum produto selecionado</p>
+            </div>
+            <div class="grid-item total">
+                <div>
+                    <p>total</p> 
+                </div>
+                <div class="valor">
+                    <span id="total">0.00€</span>
+                    <button class="btn" id="pagar">Pagar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="inner">
+            <div class="close"></div>
+            <img src="img/hamburguer.png" alt="">
+            <h2>Hamburguer</h2>
+            <div class="table">
+                <p>6.50€</p>
+                <div class="quantidade">
+                    <button id="menos">-</button>
+                    <span id="quantidade">1</span>
+                    <button id="mais">+</button>
+                </div>
+            </div>
+            <button id="adicionar">Adicionar</button>
+            <button id="atualizar">Atualizar</button>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="inner compra">
+            <div class="close"></div>
+            <h1>Conta</h1>
+            <div class="lista-modal" id="talao">
+
+            </div>
+            <div class="total">
+                total: <span id="pagamento-total">00.00€</span>
+            </div>
+            <button id="confirmar">Confirmar Pagamento</button>
+        </div>
+    </div>
+    
+    <script src="js/main.js"></script>
+
+    </body>
+</html>

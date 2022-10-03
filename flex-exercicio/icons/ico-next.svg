@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29" height="21" viewBox="0 0 29 21">
+  <g id="ico-next" transform="translate(-1564 -951)">
+    <g id="base" transform="translate(1573 951)" fill="rgba(255,255,255,0)" stroke="#cc9b55" stroke-linejoin="round" stroke-width="1">
+      <rect width="20" height="21" stroke="none"/>
+      <rect x="0.5" y="0.5" width="19" height="20" fill="none"/>
+    </g>
+    <rect id="line" width="19" height="1.03" transform="translate(1564 961)" fill="#cc9b55"/>
+  </g>
+</svg>

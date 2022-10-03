@@ -1,0 +1,223 @@
+@use 'reset';
+@use 'base' as *;
+
+// ESTILOS GERAIS
+body{
+    font-family: $mont;
+}
+
+.container{
+    width: 1053px;
+    margin: 0 auto;
+}
+
+.btn{
+    background-color: rgba($color: $azul, $alpha: 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: 100px;
+    transition: 0.3s ease-in-out;
+    img{
+        margin-right: .5rem;
+    }
+    &:hover{
+        background-color: $laranja;
+    }
+    &.laranja{
+        background-color: $laranja;
+        &:hover{
+            background-color: $azul;
+        }
+    }
+}
+
+.titulo{
+    color: $vermelhoEscuro;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.grid-3-colunas{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+
+
+// ESTILOS ESPECIFICOS
+
+.barra-menu{
+    .container{
+      border-bottom: 1px solid rgba($color: $azul, $alpha: 0.2);  
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding-bottom: 1rem;      
+    }
+    nav{
+        display: flex;
+        align-items: flex-end;
+    }
+    .menu{
+        display: flex;        
+        align-items: flex-end;
+        li a{
+            color: $azul;
+            margin: 0 1rem;
+            position: relative;
+            .img-utilizador{
+                border-radius: 50%;
+            }
+            .barra-link{
+                width: 0%;
+                height: 5px;
+                background-color: $laranja;
+                border-radius: 10px;
+                position: absolute;
+                bottom: calc(-1rem - 3px);
+                left: 0;
+                transition: 0.3s ease-in-out;
+            }
+            &:hover, &.active{
+                .barra-link{
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+    .barra{
+        width: 1px;
+        height: 80px;
+        background-color: rgba($color: $azul, $alpha: 0.2);
+        margin: 0 1rem;
+        margin-bottom: -1rem;
+    }
+}
+
+.quote{
+    padding: 4rem 0;
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-items: flex-end;
+        q{
+            color: $azul;
+            font-family: $nouv;
+            font-size: 2.4rem;
+            align-self: center;
+        }
+        .autor{
+            color: $laranja;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin: 1rem;
+        }
+    }
+}
+
+.banner-download{
+    .banner{
+        width: 100%;
+        min-height: 370px;
+        background-color: $azul;
+        background-image: url('../img/foto-header.png');
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        padding: 2rem 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2{
+            color: white;
+            font-family: $nouv;
+            font-size: 3rem;
+            line-height: 3.5rem;
+            max-width: 40%;
+            margin-bottom: 3rem;
+        }
+        .btns-app{
+            display: flex;
+            gap: 1rem;
+            a{
+                display: flex;
+                background-color:  $vermelhoEscuro;
+                width: 150px;
+                height: 50px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                transition: 0.3s ease-in-out;
+                &:hover{
+                    background-color: $vermelho;
+                }
+            }
+        }
+    }
+}
+
+.our-meals{
+    padding: 2rem 0;
+    .top-section{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .pesquisa{
+            display: flex;
+            input{
+                background-color:#F4F9FF;
+                color: rgba($color: $azul, $alpha: 0.7);
+                padding: 0 3rem 0 2rem;
+                height: 50px;
+                width: 350px;
+                border-radius: 50px;
+                font-size: 0.9rem;
+                &::placeholder{
+                    color: rgba($color: $azul, $alpha: 0.7);      
+                }
+            }
+            .input-container{
+                position: relative;
+                .ico-search{
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 1rem;
+                }
+            }
+            .btn-filtro{
+                background-color: $laranja;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                transition: 0.3s;
+                &:hover{
+                    background-color: $azul;
+                }
+            }
+        }
+        
+    }
+    .categorias{
+        margin: 1rem 0;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        .btn{
+            color:$azul;
+            height: 35px;
+            &.laranja{
+                color:white;
+            }
+        }
+    }
+}

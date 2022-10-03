@@ -1,0 +1,24 @@
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+@font-face {
+    font-family: 'Nouvelle Vague';
+    src: url('../fonts/NouvelleVague/NouvelleVague-Black.woff2') format('woff2'),
+        url('../fonts/NouvelleVague/NouvelleVague-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+$mont: 'Montserrat', sans-serif;
+$nouv: 'Nouvelle Vague', serif;
+
+
+//CORES
+$laranja: #EF4C00;
+$azul: #2E4765;
+$vermelhoEscuro: #B30733;
+$vermelho: #FF0043;
+$vinho: #9F072F;
+
+

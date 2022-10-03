@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="113" height="18" viewBox="0 0 113 18">
+  <g id="Menu" transform="translate(-362 -41)">
+    <g id="Icon">
+      <g id="menu-icon">
+        <rect id="_03" data-name="03" width="20" height="1" transform="translate(362 58)" fill="#fff"/>
+        <rect id="_02" data-name="02" width="40" height="1" transform="translate(362 49)" fill="#fff"/>
+        <rect id="_01" data-name="01" width="20" height="1" transform="translate(382 41)" fill="#fff"/>
+      </g>
+      <text id="MENU-2" data-name="MENU" transform="translate(432 54)" fill="#fff" font-size="12" font-family="Rajdhani-SemiBold, Rajdhani" font-weight="600" letter-spacing="0.4em"><tspan x="0" y="0">MENU</tspan></text>
+    </g>
+  </g>
+</svg>
