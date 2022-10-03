@@ -1,0 +1,173 @@
+$black: #333;
+$white: #F0F0F0;
+
+*{
+    margin:0px;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-family: 'Arial';
+}
+
+
+
+nav{
+    padding:0 10%;
+    ul{
+        list-style-type: none;
+        padding:0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        li{
+            a{
+                text-decoration: none;
+                color: $black;
+                padding: 20px;
+                display: block;
+
+                &:hover{
+                    background-color: $black;
+                    color: $white;
+                }
+            }
+            form{
+                display: flex;
+                input{
+                    border:0;
+                    padding: 10px;
+                    &[type="search"]{
+                        background-color: #F0F0F0;
+                        outline: none
+                    }
+                    &[type="submit"]{
+                        background-color: $black;
+                        color: $white
+                    }
+                }
+            }
+        }
+    }
+}
+.content{
+    padding: 0 10%;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .options{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        .option{
+            flex-basis: 200px;
+            text-align: center;
+            border-radius: 100%;
+            background-color: #333B;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 50px;
+            color: $white;
+            text-decoration: none;
+            position: relative;
+            &::before{
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: $black;
+                border-radius: 100%;
+                z-index: -1;
+                width: 0%;
+                height: 0%;
+                transition: width ease-in-out .3s, height ease-in-out .3s;
+            }
+            &:hover{
+                &::before{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .col{
+            flex-basis: 50%;
+            h1{
+                width: 60%;
+            }
+            a{
+                display: block;
+                padding: 10px 20px;
+                text-decoration: none;
+                color: $white;
+                background-color: $black;
+                width: 200px;
+                text-align: center;
+                margin-top: 50px;
+            }
+        }
+    }
+    .container{
+        width: 100%;
+    }
+    
+    .table{
+        width: 100%;
+        .row{
+            &:first-child{
+                .column:last-child{
+                    flex-basis: calc(calc(100% / 10) * 3);
+                }
+            }
+            width: 100%;
+            display: flex;
+            border-bottom: 1px solid #333;
+            padding: 20px;
+            .column{
+                flex-basis: calc(100% / 5);
+                form{
+                    display: flex;
+                    input{
+                        border:0;
+                        padding: 10px;
+                        background-color: $white;
+                        outline: none;
+                    }
+                    input[type="submit"]{
+                        color: $white;
+                        background-color: $black;
+                    }
+                }
+            }
+        }
+    }
+
+    .modelos{
+        .table{
+            .row{
+                .column{
+                    flex-basis: calc(100% / 8) !important;
+                }
+            }
+        }
+    }
+}
+.media{
+    width: 200px;
+    border: 1px solid #333;
+    display: inline-block;
+    margin: 20px;
+    a{
+        text-decoration: none;
+        background-color: rgb(154, 59, 59);
+        color: $white;
+        display: block;
+        padding: 10px;
+    }
+}

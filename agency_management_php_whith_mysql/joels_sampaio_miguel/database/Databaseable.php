@@ -1,0 +1,12 @@
+<?php
+
+use Databaseable as GlobalDatabaseable;
+
+interface Databaseable 
+{
+    public function save(): bool;
+    public static function get(int $id): Databaseable;
+    public static function search(array $colunas, array $operadores, array $valores): array;
+    public function update(): bool;
+    public static function delete(int $id): bool;
+}
